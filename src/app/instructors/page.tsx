@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { CoverMedia } from "@/components/CoverMedia";
-import { allInstructors } from "@/lib/catalog";
+import { allInstructors } from "@/lib/catalogServer";
 import { VERIFICATION_LABEL } from "@/lib/domain";
 import { avatarPath } from "@/lib/media";
 

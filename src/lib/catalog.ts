@@ -1,5 +1,4 @@
 import type { Instructor, LearningOffer, StudentProfile } from "./domain";
-import { listOnboardedInstructors } from "./store";
 
 export const instructors: Instructor[] = [
   {
@@ -140,19 +139,6 @@ export const demoStudent: StudentProfile = {
   projects: ["AI customer support agent", "Payment dashboard", "Lead generation system"],
   events: ["AI Africa 2026", "Fintech builders meetup", "RedFace Skool AI workshop"],
 };
-
-export async function allInstructors(): Promise<Instructor[]> {
-  const extra = await listOnboardedInstructors();
-  const bySlug = new Map<string, Instructor>();
-  for (const person of instructors) bySlug.set(person.slug, person);
-  for (const person of extra) bySlug.set(person.slug, person);
-  return [...bySlug.values()];
-}
-
-export async function instructorBySlug(slug: string) {
-  const list = await allInstructors();
-  return list.find((i) => i.slug === slug) ?? null;
-}
 
 export function offerBySlug(slug: string) {
   return offers.find((o) => o.slug === slug) ?? null;

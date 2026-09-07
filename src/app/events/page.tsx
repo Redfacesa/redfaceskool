@@ -1,5 +1,6 @@
 import { CatalogBoard } from "@/components/CatalogBoard";
-import { allInstructors, offers } from "@/lib/catalog";
+import { offers } from "@/lib/catalog";
+import { allInstructors } from "@/lib/catalogServer";
 
 export default async function EventsPage() {
   const people = await allInstructors();

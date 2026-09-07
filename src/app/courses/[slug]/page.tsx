@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { StudioLayout } from "@/components/StudioLayout";
-import { instructorBySlug, offerBySlug } from "@/lib/catalog";
+import { instructorBySlug } from "@/lib/catalogServer";
+import { offerBySlug } from "@/lib/catalog";
 import { splitRevenue, formatZar } from "@/lib/domain";
 
 export default async function CoursePage({ params }: { params: Promise<{ slug: string }> }) {

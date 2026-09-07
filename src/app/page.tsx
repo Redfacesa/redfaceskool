@@ -1,5 +1,6 @@
 import { WorkspaceHome } from "@/components/WorkspaceHome";
-import { allInstructors, offers } from "@/lib/catalog";
+import { allInstructors } from "@/lib/catalogServer";
+import { offers } from "@/lib/catalog";
 
 export default async function HomePage() {
   const instructors = await allInstructors();

@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CoverMedia } from "@/components/CoverMedia";
-import { instructorBySlug, offersForInstructor } from "@/lib/catalog";
+import { instructorBySlug } from "@/lib/catalogServer";
+import { offersForInstructor } from "@/lib/catalog";
 import { VERIFICATION_LABEL, formatZar } from "@/lib/domain";
 import { avatarPath } from "@/lib/media";
 
