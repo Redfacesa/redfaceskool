@@ -1,5 +1,5 @@
 /**
- * RedFace Pay client. Refesco never calls Paystack.
+ * RedFace Pay client. RedFace Skool never calls Paystack.
  * POST /payments on Commerce API with rf_live_ / rf_test_ key.
  */
 

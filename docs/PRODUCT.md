@@ -1,6 +1,8 @@
-# Refesco product constitution
+# RedFace Skool product constitution
 
-Refesco is **marketplace infrastructure**, not a school.
+**RedFace Skool** is the product people use. **Refesco** is the marketplace line.
+
+RedFace Skool is **marketplace infrastructure**, not a school.
 
 ## Positioning
 
@@ -19,7 +21,7 @@ Not: an online school where teachers teach students.
 | Certificates of completion | Verified profile |
 | Learning identity / portfolio | Sell knowledge |
 
-Refesco sits in the middle. It does not employ instructors.
+RedFace Skool sits in the middle. It does not employ instructors.
 
 ## Three learning types
 
@@ -37,14 +39,14 @@ Instructor, educator, lecturer, expert, mentor, industry professional, course cr
 - Identity verified
 - Professional verified
 - Credential verified
-- Refesco expert
+- RedFace Skool expert
 
 Uploading a PDF is not the same as Credential verified.
 
 ## Certificates
 
-- **Refesco Certificate of Completion**: this platform, this course.
-- **Industry certification**: AWS, CompTIA, etc. issued by that body. Refesco may offer a **prep pathway**. It does not issue their credential.
+- **RedFace Skool Certificate of Completion**: this platform, this course.
+- **Industry certification**: AWS, CompTIA, etc. issued by that body. RedFace Skool may offer a **prep pathway**. It does not issue their credential.
 
 ## Ecosystem loop (architecture, not v1 scope)
 

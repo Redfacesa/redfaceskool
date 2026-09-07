@@ -54,7 +54,7 @@ export default function PayButton({ offerId, label }: { offerId: string; label: 
       <button className="btn" type="button" onClick={pay} disabled={busy || !email.includes("@")}>
         {busy ? "Opening RedFace Pay…" : label}
       </button>
-      <p className="muted">Card details stay on RedFace Pay. Refesco only records the enrollment.</p>
+      <p className="muted">Card details stay on RedFace Pay. RedFace Skool only records the enrollment.</p>
       {error ? <p className="muted">{error}</p> : null}
     </div>
   );

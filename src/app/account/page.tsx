@@ -29,10 +29,12 @@ export default function AccountPage() {
   }
 
   return (
-    <main className="stack" style={{ maxWidth: 640 }}>
-      <p className="kicker">Students</p>
-      <h1>My enrollments</h1>
-      <p className="muted">Look up by the email you used at checkout. This is not a password account yet.</p>
+    <main className="stack" style={{ maxWidth: 720 }}>
+      <div className="page-head">
+        <p className="kicker">Library</p>
+        <h1>My enrollments</h1>
+        <p className="muted">Look up by the email you used at checkout. This is not a password account yet.</p>
+      </div>
       <form className="stack" onSubmit={load}>
         <label>
           Email

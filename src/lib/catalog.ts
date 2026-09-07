@@ -43,6 +43,15 @@ export const offers: LearningOffer[] = [
     hours: 12,
     modules: 8,
     certificate: "refresco_completion",
+    tags: ["Python", "Beginner"],
+    cover: "/covers/python-for-beginners.jpg",
+    lessons: [
+      { title: "Install and write your first script", minutes: 18, preview: true },
+      { title: "Variables, lists, and control flow", minutes: 24 },
+      { title: "Functions you will actually reuse", minutes: 22 },
+      { title: "Read files and talk to APIs", minutes: 28 },
+      { title: "Ship a small tool", minutes: 32 },
+    ],
   },
   {
     id: "course-ai-agents",
@@ -55,7 +64,15 @@ export const offers: LearningOffer[] = [
     hours: 16,
     modules: 10,
     certificate: "refresco_completion",
-    industryPathway: "Prepare later for vendor AI certifications. Those credentials are not issued by Refesco.",
+    industryPathway: "Prepare later for vendor AI certifications. Those credentials are not issued by RedFace Skool.",
+    tags: ["AI", "Agents"],
+    cover: "/covers/building-ai-agents.jpg",
+    lessons: [
+      { title: "What an agent is not", minutes: 16, preview: true },
+      { title: "Tools, memory, and guardrails", minutes: 30 },
+      { title: "Build a payments assistant", minutes: 40 },
+      { title: "Demo it like a product", minutes: 22 },
+    ],
   },
   {
     id: "live-ai-workshop",
@@ -68,6 +85,8 @@ export const offers: LearningOffer[] = [
     startsAt: "2026-09-20T14:00:00+02:00",
     seats: 24,
     certificate: "refresco_completion",
+    tags: ["Workshop", "Automation"],
+    cover: "/covers/ai-automation-workshop.jpg",
   },
   {
     id: "event-fintech-meetup",
@@ -79,19 +98,29 @@ export const offers: LearningOffer[] = [
     priceZar: 0,
     startsAt: "2026-09-27T18:00:00+02:00",
     certificate: "refresco_completion",
+    tags: ["Community", "Fintech"],
+    cover: "/covers/fintech-builders-meetup.jpg",
   },
   {
     id: "course-aws-fundamentals",
     slug: "aws-cloud-fundamentals",
     kind: "course",
     title: "AWS cloud fundamentals",
-    summary: "Refesco course taught by an instructor. Not an AWS certificate.",
+    summary: "RedFace Skool course taught by an instructor. Not an AWS certificate.",
     instructorSlug: "thandi-moyo",
     priceZar: 650,
     hours: 10,
     modules: 6,
     certificate: "industry_pathway",
     industryPathway: "Prep for AWS Certified Cloud Practitioner. The exam and badge come from AWS.",
+    tags: ["AWS", "Cloud"],
+    cover: "/covers/aws-cloud-fundamentals.jpg",
+    lessons: [
+      { title: "Regions, accounts, and billing reality", minutes: 20, preview: true },
+      { title: "Compute and storage without the jargon", minutes: 28 },
+      { title: "IAM that will not lock you out", minutes: 24 },
+      { title: "Exam vs actual job work", minutes: 18 },
+    ],
   },
 ];
 
@@ -109,7 +138,7 @@ export const demoStudent: StudentProfile = {
     { name: "AWS Cloud Practitioner (external)", kind: "industry_pathway" },
   ],
   projects: ["AI customer support agent", "Payment dashboard", "Lead generation system"],
-  events: ["AI Africa 2026", "Fintech builders meetup", "Refesco AI workshop"],
+  events: ["AI Africa 2026", "Fintech builders meetup", "RedFace Skool AI workshop"],
 };
 
 export async function allInstructors(): Promise<Instructor[]> {

@@ -36,7 +36,7 @@ export default function CheckoutReturn({
       if (stop) return;
       if (data.enrollment) setRow(data.enrollment);
       if (data.enrollment?.status === "paid" || data.enrollment?.status === "free") {
-        setNote("Access is unlocked on Refesco.");
+        setNote("Access is unlocked on RedFace Skool.");
         return;
       }
       setNote(

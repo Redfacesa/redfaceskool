@@ -27,7 +27,7 @@ export const VERIFICATION_LABEL: Record<VerificationLevel, string> = {
   identity_verified: "Identity verified",
   professional_verified: "Professional verified",
   credential_verified: "Credential verified",
-  refesco_expert: "Refesco expert",
+  refesco_expert: "RedFace Skool expert",
 };
 
 export type OfferKind = "course" | "live" | "event";
@@ -48,6 +48,12 @@ export type Instructor = {
   linkedin?: string;
 };
 
+export type Lesson = {
+  title: string;
+  minutes: number;
+  preview?: boolean;
+};
+
 export type LearningOffer = {
   id: string;
   slug: string;
@@ -62,6 +68,9 @@ export type LearningOffer = {
   certificate: CertificateKind;
   industryPathway?: string;
   seats?: number;
+  tags: string[];
+  cover: string;
+  lessons?: Lesson[];
 };
 
 export type StudentProfile = {

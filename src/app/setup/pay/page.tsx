@@ -20,13 +20,13 @@ export default function PaySetupPage() {
   return (
     <main className="stack" style={{ maxWidth: 720 }}>
       <p className="kicker">RedFace Pay</p>
-      <h1>Connect the Refesco merchant</h1>
+      <h1>Connect the RedFace Skool merchant</h1>
       <p>
-        Live checkout needs a RedFace Pay merchant for Refesco, then an API key in this app only.
+        Live checkout needs a RedFace Pay merchant for RedFace Skool, then an API key in this app only.
         Do not put Paystack keys here.
       </p>
       <ol className="muted">
-        <li>On www.redfacepay.co.za, create or approve the Refesco business.</li>
+        <li>On www.redfacepay.co.za, create or approve the RedFace Skool business.</li>
         <li>Complete KYC and bank details so instructors can eventually be paid via subaccounts.</li>
         <li>Create a Commerce API key with the payments scope (rf_live_ or rf_test_).</li>
         <li>Put REDFACE_API_KEY and REDFACE_BUSINESS_ID in redfaceskool/.env.local.</li>

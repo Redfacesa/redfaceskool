@@ -58,7 +58,7 @@ export async function POST(req: Request) {
     const checkout = await createRedfaceCheckout({
       offerId: offer.id,
       offerKind: offer.kind,
-      label: `Refesco · ${offer.title}`,
+      label: `RedFace Skool · ${offer.title}`,
       amountZar: offer.priceZar,
       instructorId: offer.instructorSlug,
       studentEmail: email,
