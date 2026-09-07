@@ -27,7 +27,7 @@ export const VERIFICATION_LABEL: Record<VerificationLevel, string> = {
   identity_verified: "Identity verified",
   professional_verified: "Professional verified",
   credential_verified: "Credential verified",
-  refresco_expert: "Refesco expert",
+  refesco_expert: "Refesco expert",
 };
 
 export type OfferKind = "course" | "live" | "event";
