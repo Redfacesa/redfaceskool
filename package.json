@@ -1,0 +1,25 @@
+{
+  "name": "refesco",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Refesco: technology learning marketplace. Payments through RedFace Pay.",
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^15.5.2",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.0",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "eslint": "^9.35.0",
+    "eslint-config-next": "^15.5.2",
+    "typescript": "^5.9.2"
+  }
+}
